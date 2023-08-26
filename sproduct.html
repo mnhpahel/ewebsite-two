@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <!-- bootstrap css cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .small-img-group{
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col{
+            flex-basis: 24%;
+        }
+        .sproduct select{
+            display: block;
+            padding: 5px 10px;
+        }
+        .sproduct input{
+            width: 50px;
+            height: 41px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        .sproduct input:focus{
+            outline: none;
+        }
+        .buy-btn{
+            height: 43px;
+            background-color: coral;
+            opacity: 1;
+            transition: 0.3s all;
+        }
+    </style>
+
+    </head>
+    <body>
+        <!-- Navigation Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+            <div class="container">
+            <img src="img/logo1.png" alt="Main Logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" id="bar"></i></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-shopping-bag"></i>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <!-- Navigation Section End -->
+
+        <!-- single product section -->
+        <section class="sproduct container my-5 pt-5">
+            <div class="row mt-5">
+                <div class="col-lg-5 col-md-12 col-12">
+                    <img id="mainImg" class="w-100 img-fluid pb-1" src="img/shop/1.jpg" alt="sproduct img">
+                    <div class="small-img-group">
+                        <div class="small-img-col">
+                            <img src="img/shop/1.jpg" width="100%" class="small-img" alt="sproduct details">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/shop/24.jpg" width="100%" class="small-img" alt="sproduct details">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/shop/25.jpg" width="100%" class="small-img" alt="sproduct details">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/shop/26.jpg" width="100%" class="small-img" alt="sproduct details">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-12">
+                    <h6>Home / T Shirt</h6>
+                    <h2 class="py-4">Men's Fashion T Shirt</h2>
+                    <h2>$150.00</h2>
+                    <select class="my-3">
+                        <option value="">Select Size</option>
+                        <option value="">XL</option>
+                        <option value="">XXL</option>
+                        <option value="">Small</option>
+                        <option value="">Large</option>
+                    </select>
+                    <input type="number" value="1">
+                    <button class="buy-btn">Add To Cart</button>
+                    <h4 class="my-5">Product Details</h4>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus rerum, architecto nobis velit quas libero, possimus vero necessitatibus cum iure officia ab quaerat molestias excepturi odio numquam tempore pariatur enim quod quos voluptates sed. Delectus accusantium itaque molestias accusamus, unde porro, dolore provident suscipit dolores exercitationem asperiores autem quas.</span>
+                </div>
+            </div>
+        </section>
+        <!-- single product section end -->
+
+        <!-- featured section -->
+        <section id="featured" class="my-5 pb-5">
+            <div class="container text-center mt-5 py-5">
+            <h3>Related Product</h3>
+            <hr class="mx-auto">
+            </div>
+            <div class="row mx-auto container-fluid">
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="img/featured/1.jpg" alt="featured img" class="img-fluid mb-3">
+                <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="img/featured/2.jpg" alt="featured img" class="img-fluid mb-3">
+                <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="img/featured/3.jpg" alt="featured img" class="img-fluid mb-3">
+                <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img src="img/featured/4.jpg" alt="featured img" class="img-fluid mb-3">
+                <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h5 class="p-name">Sport Boots</h5>
+                <h4 class="p-price">$92.00</h4>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            </div>
+        </section>
+        <!-- featured section end -->
+
+        <!-- footer section -->
+        <footer class="mt-5 pb-5">
+            <div class="row container mx-auto pt-5">
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <img src="img/logo2.png" alt="footer logo img">
+                <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quibusdam voluptatem impedit magnam dolores voluptas ut ipsum delectus laboriosam aliquid.</p>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Featured</h5>
+                <ul class="text-uppercase list-unstyled">
+                <li><a href="#">men</a></li>
+                <li><a href="#">women</a></li>
+                <li><a href="#">boys</a></li>
+                <li><a href="#">girls</a></li>
+                <li><a href="#">new arrivals</a></li>
+                <li><a href="#">shoes</a></li>
+                <li><a href="#">cloths</a></li>
+                </ul>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+                <h5 class="pb-2">Contact Us</h5>
+                <div>
+                <h6 class="text-uppercase">Address</h6>
+                <p>2334 STREET NAME, CITY, BD</p>
+                </div>
+                <div>
+                <h6 class="text-uppercase">Phone</h6>
+                <p>(+880) 17 44444444</p>
+                </div>
+                <div>
+                <h6 class="text-uppercase">Email</h6>
+                <p>EMAIL@EXAMPLE.COM</p>
+                </div>
+            </div>
+            <div class="footer-one col-lg-3 col-md-6 col-12">
+                <h5 class="pb-2">Social Link</h5>
+                <div class="row">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/1.jpg" alt="insta img">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/2.jpg" alt="insta img">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/3.jpg" alt="insta img">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/4.jpg" alt="insta img">
+                <img class="img-fluid w-25 h-100 m-2" src="img/insta/5.jpg" alt="insta img">
+                </div>
+            </div>
+            </div>
+            <div class="copyright mt-5">
+            <div class="row container mx-auto">
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                <img src="img/payment.png" alt="payment img">
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <p>nhp eCommerce &copy; 2023. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
+        
+        <!-- bootstrap js cdn link -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            
+        <!-- font awesome cdn link -->
+        <script src="https://kit.fontawesome.com/f5939fe8a9.js" crossorigin="anonymous"></script>
+
+        <!-- custom script -->
+        <script>
+            var mainimg = document.getElementById('mainImg');
+            var smallimg = document.getElementsByClassName('small-img');
+
+            smallimg[0].onclick = function(){
+                mainImg.src = smallimg[0].src;
+            }
+            smallimg[1].onclick = function(){
+                mainImg.src = smallimg[1].src;
+            }
+            smallimg[2].onclick = function(){
+                mainImg.src = smallimg[2].src;
+            }
+            smallimg[3].onclick = function(){
+                mainImg.src = smallimg[3].src;
+            }
+        </script>
+    </body>
+</html> 
